@@ -12,6 +12,8 @@
 
 @interface ViewController ()  <UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *ImageCollectionView;
+
 @property NSArray *collectionOfImages;
 
 @end
@@ -92,5 +94,13 @@
     return NO;
 }
 
+- (IBAction)changeArrangement:(UISegmentedControl *)sender {
+    if (sender.selectedSegmentIndex == 0) {
+        [self arrangeSectionsByProperty:@"subject"];
+    } else if (sender.selectedSegmentIndex == 1) {
+        [self arrangeSectionsByProperty:@"location"];
+    }
+    [self.ImageCollectionView reloadData];
+}
 
 @end
