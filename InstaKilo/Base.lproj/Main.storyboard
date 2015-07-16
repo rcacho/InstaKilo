@@ -47,8 +47,7 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="SKT-Qj-4Yz" secondAttribute="bottom" id="l0c-9a-GQr"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageViewCellImage" destination="SKT-Qj-4Yz" id="4B0-5e-ARK"/>
-                                            <outlet property="imageViewCellImageView" destination="SKT-Qj-4Yz" id="tKE-aG-buP"/>
+                                            <outlet property="imageViewCellImageView" destination="SKT-Qj-4Yz" id="kFv-Ua-zMC"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

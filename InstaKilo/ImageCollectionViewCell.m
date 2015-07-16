@@ -16,8 +16,9 @@
 
 @implementation ImageCollectionViewCell
 
-- (void)setImageViewCellImage:(UIImage *)image {
-    _imageViewCellImageView.image = image;
+- (void)setImageForCell:(DetailedImage *)imageForCell {
+    _imageForCell = imageForCell;
+    self.imageViewCellImageView.image = imageForCell.imageDetailed;
 }
 
 @end

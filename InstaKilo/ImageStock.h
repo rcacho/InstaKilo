@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ViewController.h"
+#import "DetailedImage.h"
 
 @interface ImageStock : NSObject
 
@@ -16,5 +17,9 @@
 + (NSArray *)listOfBirdImages;
 
 + (NSArray *)listOfFishImages;
+
++ (NSDictionary *)collectionOfImagesAsDictionary;
+
++ (NSArray *)collectionOfImagesAsUnassortedList;
 
 @end

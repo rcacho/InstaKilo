@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailedImage.h"
 
 @interface ImageCollectionViewCell : UICollectionViewCell
 
-
-- (void)setImageViewCellImage:(UIImage *)image;
+@property (nonatomic) DetailedImage *imageForCell;
 
 @end
